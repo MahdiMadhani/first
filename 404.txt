@@ -1,0 +1,18 @@
+http://www.strathweb.com/2015/12/running-asp-net-5-website-on-iis/
+http://www.dotnettips.info/post/1408/asp-net-friendlyurls-%d9%88-%d8%af%d8%b1%db%8c%d8%a7%d9%81%d8%aa-%d8%ae%d8%b7%d8%a7%db%8c-404
+https://github.com/aspnet/Home/issues/1260
+http://serverfault.com/questions/583246/iis-8-5-getting-error-when-returning-static-404-file
+/////////////////add
+    <system.webServer>  
+    <modules runAllManagedModulesForAllRequests="true">  
+    <remove name="BundleModule" />  
+    <add name="BundleModule" type="System.Web.Optimization.BundleModule" />  
+    </modules>  
+    </system.webServer>  
+
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <directoryBrowse enabled="true" />
+    </system.webServer>
+</configuration>
